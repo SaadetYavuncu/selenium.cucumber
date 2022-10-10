@@ -75,8 +75,8 @@ public class AmazonStepDefinition {
         Assert.assertTrue(actualAramaSonucStr.contains(arananKelime));
     }
 
-    @Given("Kullanici {string} anasayfasında")//amazonUrl
-    public void kullaniciAnasayfasında(String istenenUrl) {
+    @Given("Kullanici {string} sayfasina gider")//amazonUrl
+    public void kullaniciSayfasinaGider(String istenenUrl) {
         Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
     }
 
@@ -86,8 +86,8 @@ public class AmazonStepDefinition {
        Assert.assertTrue(actualUrl.contains(istenenKelime));
     }
 
-    @Then("kullanici {int} sn bekler")
-    public void kullaniciSnBekler(int istenenSaniye) {
+    @Then("Kullanici {int} sn bekler")
+    public void KullaniciSnBekler(int istenenSaniye) {
 
         try {
             Thread.sleep(istenenSaniye*1000);

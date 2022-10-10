@@ -16,4 +16,3 @@ Feature: US102 kullanici google da arama yapar
     And Once urun sayisi fazla olan siteyi kapatir
     Then kullanici 2 sn bekler
     And Sonra diger sayfayida kapatir
-
