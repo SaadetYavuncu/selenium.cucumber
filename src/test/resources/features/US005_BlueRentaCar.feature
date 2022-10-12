@@ -1,4 +1,4 @@
-Feature: US005 Ck Hotels Login
+Feature: US005 Blue RentaCar Login
 
   Scenario: TC11 kullanici gecerli bilgilerle giris yapar
 

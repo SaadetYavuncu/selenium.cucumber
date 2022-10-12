@@ -7,7 +7,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.opera.OperaDriver;
+//import org.openqa.selenium.opera.OperaDriver;
 import org.openqa.selenium.safari.SafariDriver;
 
 import java.time.Duration;
@@ -58,10 +58,10 @@ public class Driver {
                     driver = new EdgeDriver();
                     break;
 
-                case "opera" :
-                    WebDriverManager.operadriver().setup();
-                    driver = new OperaDriver();
-                    break;
+//                case "opera" :
+//                    WebDriverManager.operadriver().setup();
+//                    driver = new OperaDriver();
+//                    break;
 
                     case "headless-chrome" ://chrome u gormeden arka planda çalısır bize sonucu gösterir sadece
                         WebDriverManager.chromedriver().setup();

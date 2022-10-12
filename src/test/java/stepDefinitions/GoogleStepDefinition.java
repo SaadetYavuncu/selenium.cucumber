@@ -9,8 +9,6 @@ import pages.GooglePage;
 import utilities.ConfigReader;
 import utilities.Driver;
 
-import java.util.Locale;
-
 public class GoogleStepDefinition {
     GooglePage googlePage = new GooglePage();
 

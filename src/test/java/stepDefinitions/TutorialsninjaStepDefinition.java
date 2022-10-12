@@ -5,13 +5,10 @@ import io.cucumber.java.en.Then;
 import org.junit.Assert;
 import org.openqa.selenium.WebElement;
 import pages.TutorialsPage;
-import utilities.Driver;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
-import java.util.concurrent.Callable;
 
 public class TutorialsninjaStepDefinition {
 
