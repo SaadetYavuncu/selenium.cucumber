@@ -28,4 +28,8 @@ public class DemoGuruPage {
             System.out.println(istenenDeger.getText());
         }
     }
+
+
+    @FindBy (xpath="//thead/tr/th")
+    public List<WebElement> basliklar;
 }

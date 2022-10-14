@@ -6,10 +6,13 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
+        plugin={"html:target\\cucumber-reports.html",
+                "json:target/json-reports/cucumber.json",
+                "junit:target/xml-report/cucumber.xml" },
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@PracticeTC07", //iki tagı aynı anda calistirmak isterseniz "@gp1 or @gp2",
-        dryRun = false //true yazarsak sayfaları açmadan test edip sadece sonucu döndürüyor
+        tags = "@Web", // iki tag'ı aynı anda çalıştırmak isterseniz "@gp1 or @gp2"
+        dryRun = false
 )
 
 

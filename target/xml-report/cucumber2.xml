@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="56.267">
+    <testcase classname="US014 Class Work" name="Kullanici ve Url Testi" time="55.539">
+        <system-out><![CDATA[Given kullanici "WebUrl" anasayfaya gider...................................passed
+When Kullanici 3 sn bekler..................................................passed
+Then kullanici Login Portala kadar asagi iner...............................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici Login Portala tiklar..........................................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici diger windowa gecer...........................................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici "username" kutusuna bilgileri girer...........................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici "password" bolumune bilgileri girer...........................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici login butonuna basar..........................................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici Popup'ta cikan yazinin validation failed oldugunu test eder...passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici Ok diyerek Popup'i kapatir....................................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici ilk sayfaya geri doner........................................passed
+When Kullanici 3 sn bekler..................................................passed
+And kullanici ilk sayfaya donuldugunu test eder.............................passed
+When Kullanici 3 sn bekler..................................................passed
+And sayfalari kapatir.......................................................passed
+]]></system-out>
+    </testcase>
+</testsuite>

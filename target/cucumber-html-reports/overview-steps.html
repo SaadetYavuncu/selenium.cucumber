@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.tablesorter.min.js"></script>
+<script src="js/Chart.min.js"></script>
+<script src="js/moment.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script>
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+        <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+        <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+        <th>Number</th>
+      <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>cucumber-jvm-example</td>
+        <td>1</td>
+      <td>15 Oct 2022, 01:41</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+  </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+      <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+  </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+              <td class="location">stepDefinitions.AmazonStepDefinition.KullaniciSnBekler(int)</td>
+              <td>22</td>
+              <td class="duration" data-value="3014014645">3.014</td>
+              <td class="duration" data-value="3014014645">3.045</td>
+              <td class="duration" data-value="66308322200">1:6.308</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.DemoGuruStepDefinition.kullaniciAnasayfayaGider(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="13650464800">13.650</td>
+              <td class="duration" data-value="13650464800">13.837</td>
+              <td class="duration" data-value="27300929600">27.300</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)</td>
+              <td>2</td>
+              <td class="duration" data-value="5263389250">5.263</td>
+              <td class="duration" data-value="5263389250">5.479</td>
+              <td class="duration" data-value="10526778500">10.526</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciBolumuneBilgileriGirer(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="786087100">0.786</td>
+              <td class="duration" data-value="786087100">0.794</td>
+              <td class="duration" data-value="1572174200">1.572</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciDigerWindowaGecer()</td>
+              <td>2</td>
+              <td class="duration" data-value="32982600">0.032</td>
+              <td class="duration" data-value="32982600">0.033</td>
+              <td class="duration" data-value="65965200">0.065</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciIlkSayfayaDonuldugunuTestEder()</td>
+              <td>2</td>
+              <td class="duration" data-value="10992800">0.010</td>
+              <td class="duration" data-value="10992800">0.011</td>
+              <td class="duration" data-value="21985600">0.021</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciIlkSayfayaGeriDoner()</td>
+              <td>2</td>
+              <td class="duration" data-value="66965500">0.066</td>
+              <td class="duration" data-value="66965500">0.095</td>
+              <td class="duration" data-value="133931000">0.133</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciKutusunaBilgileriGirer(java.lang.String)</td>
+              <td>2</td>
+              <td class="duration" data-value="1235729900">1.235</td>
+              <td class="duration" data-value="1235729900">1.295</td>
+              <td class="duration" data-value="2471459800">2.471</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciLoginButonunaBasar()</td>
+              <td>2</td>
+              <td class="duration" data-value="443266150">0.443</td>
+              <td class="duration" data-value="443266150">0.493</td>
+              <td class="duration" data-value="886532300">0.886</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciLoginPortalaKadarAsagiIner()</td>
+              <td>2</td>
+              <td class="duration" data-value="25486950">0.025</td>
+              <td class="duration" data-value="25486950">0.026</td>
+              <td class="duration" data-value="50973900">0.050</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciLoginPortalaTiklar()</td>
+              <td>2</td>
+              <td class="duration" data-value="527223100">0.527</td>
+              <td class="duration" data-value="527223100">0.694</td>
+              <td class="duration" data-value="1054446200">1.054</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciOkDiyerekPopupIKapatir()</td>
+              <td>2</td>
+              <td class="duration" data-value="120437300">0.120</td>
+              <td class="duration" data-value="120437300">0.206</td>
+              <td class="duration" data-value="240874600">0.240</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.kullaniciPopupTaCikanYazininValidationFailedOldugunuTestEder()</td>
+              <td>2</td>
+              <td class="duration" data-value="31482900">0.031</td>
+              <td class="duration" data-value="31482900">0.038</td>
+              <td class="duration" data-value="62965800">0.062</td>
+              <td class="passed">100.00%</td>
+            </tr>
+            <tr>
+              <td class="location">stepDefinitions.WebDriverStepDefinition.sayfalariKapatir()</td>
+              <td>2</td>
+              <td class="duration" data-value="431044550">0.431</td>
+              <td class="duration" data-value="431044550">0.467</td>
+              <td class="duration" data-value="862089100">0.862</td>
+              <td class="passed">100.00%</td>
+            </tr>
+        </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>14</td>
+            <td>48</td>
+            <td class="duration">2.324</td>
+            <td class="duration">1:6.308</td>
+            <td class="duration">1:51.559</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
