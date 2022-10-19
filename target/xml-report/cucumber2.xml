@@ -1,29 +1,43 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="56.267">
-    <testcase classname="US014 Class Work" name="Kullanici ve Url Testi" time="55.539">
-        <system-out><![CDATA[Given kullanici "WebUrl" anasayfaya gider...................................passed
-When Kullanici 3 sn bekler..................................................passed
-Then kullanici Login Portala kadar asagi iner...............................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici Login Portala tiklar..........................................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici diger windowa gecer...........................................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici "username" kutusuna bilgileri girer...........................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici "password" bolumune bilgileri girer...........................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici login butonuna basar..........................................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici Popup'ta cikan yazinin validation failed oldugunu test eder...passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici Ok diyerek Popup'i kapatir....................................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici ilk sayfaya geri doner........................................passed
-When Kullanici 3 sn bekler..................................................passed
-And kullanici ilk sayfaya donuldugunu test eder.............................passed
-When Kullanici 3 sn bekler..................................................passed
-And sayfalari kapatir.......................................................passed
-]]></system-out>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="28.224">
+    <testcase classname="US016 Class Work4" name="TC01 alerts and explicitly wait" time="27.305">
+        <failure message="element click intercepted: Element &lt;span class=&quot;text&quot;&gt;...&lt;/span&gt; is not clickable at point (106, 613). Other element would receive the click: &lt;div id=&quot;fixedban&quot; style=&quot;width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999&quot;&gt;...&lt;/div&gt;&#10;  (Session info: chrome=106.0.5249.119)&#10;Build info: version: '4.5.0', revision: 'fe167b119a'&#10;System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [59dd4fd985e6158ab4a0e061b6b49ffa, clickElement {id=fd6b68e1-562c-4bf1-b876-97973d5e704b}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:7728/devtool..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Element: [[ChromeDriver: chrome on WINDOWS (59dd4fd985e6158ab4a0e061b6b49ffa)] -&gt; xpath: (//*[.='Alerts'])[2]]&#10;Session ID: 59dd4fd985e6158ab4a0e061b6b49ffa" type="org.openqa.selenium.ElementClickInterceptedException"><![CDATA[Given Kullanici "demoUrl" sayfasina gider...................................passed
+And Kullanici 2 sn bekler...................................................passed
+When kullanici Alerts buttonuna tiklar......................................failed
+And Kullanici 2 sn bekler...................................................skipped
+And kullanici On button click, alert will appear after bes seconds karsisindaki click me  butonuna basar.skipped
+And kullanici Allertin gorunur olmasini bekler..............................skipped
+And kullanici Allert uzerindeki yazinin This alert appeared after bes seconds oldugunu test eder.skipped
+And kullanici ok diyerek alerti kapatir.....................................skipped
+
+StackTrace:
+org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <span class="text">...</span> is not clickable at point (106, 613). Other element would receive the click: <div id="fixedban" style="width:100%;margin:auto;text-align:center;float:none;overflow:hidden;display:scroll;position:fixed;bottom:0;z-index:9999999">...</div>
+  (Session info: chrome=106.0.5249.119)
+Build info: version: '4.5.0', revision: 'fe167b119a'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '18.0.2.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59dd4fd985e6158ab4a0e061b6b49ffa, clickElement {id=fd6b68e1-562c-4bf1-b876-97973d5e704b}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 106.0.5249.119, chrome: {chromedriverVersion: 106.0.5249.61 (511755355844..., userDataDir: C:\Users\SONY\AppData\Local...}, goog:chromeOptions: {debuggerAddress: localhost:7728}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:7728/devtool..., se:cdpVersion: 106.0.5249.119, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on WINDOWS (59dd4fd985e6158ab4a0e061b6b49ffa)] -> xpath: (//*[.='Alerts'])[2]]
+Session ID: 59dd4fd985e6158ab4a0e061b6b49ffa
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:547)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:577)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy23.click(Unknown Source)
+	at stepDefinitions.DemoStepDefinition.kullaniciAlertsButtonunaTiklar(DemoStepDefinition.java:21)
+	at ✽.kullanici Alerts buttonuna tiklar(file:///C:/Users/SONY/IdeaProjects/com.Batch81Cucumber/src/test/resources/features/US016_ClassWork4.feature:8)
+]]></failure>
     </testcase>
 </testsuite>
